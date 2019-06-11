@@ -46,20 +46,12 @@ h1 {
   margin: 0;
   color: white;
   font-size: 4em;
-  text-shadow: 2px 2px #ff0000;
+  text-shadow: 1px 1.5px #ff0000;
 }
 h3 {
   margin: 0;
   font-size: 2em;
   text-shadow: 1px 1px white;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
 }
 
 .heading {
