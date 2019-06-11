@@ -42,16 +42,39 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+@keyframes introName {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+@keyframes introDesc {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
 h1 {
   margin: 0;
   color: white;
   font-size: 4em;
   text-shadow: 1px 1.5px #ff0000;
+  animation-name: introName;
+  animation-duration: 3s;
+  position: relative;
 }
 h3 {
   margin: 0;
   font-size: 2em;
   text-shadow: 1px 1px white;
+  animation-name: introDesc;
+  animation-duration: 3s;
+  position: relative;
 }
 
 .heading {
@@ -65,5 +88,6 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  box-shadow: 1px 1px 10px;
 }
 </style>
