@@ -14,14 +14,13 @@
 </template>
 
 <script>
-import { jobs, education, projects } from '../data/resume';
+import { jobs, education } from '../data/resume';
 export default {
   name: 'About',
   data() {
     return {
       jobs,
-      education,
-      projects
+      education
     };
   }
 };
