@@ -3,25 +3,23 @@
     <h1>About Me / Resume</h1>
     <div id="img-and-desc">
       <img src="../assets/headshot.jpg">
-      <p
-        class="text"
-      >Placeholder yada yada yada yada yada yada yada yada yada yada yad adyad uashdgfa f hsdufg isdfhgisdfhgois uhdfoi gsdofighs9df ighosidfhgos idfhgo shdfog iishdofig hoasj d oiah fdg iusudhfvk isdjf isdfugh aosdij aisudfi asud h i8u g</p>
+      <p class="text">
+        I am Dan Gilbert, a Software Engineer currently based in New York. I have knowledge in both front and backend technologies and development practices. My technical strengths include
+        <span
+          style="color: #b63f29"
+        >JavaScript, Node, Express, React, Redux, React-Native, Vue, SQL, Sequelize</span> and much more. Besides engineering, I love sports, music, fishing, and building custom computers!
+      </p>
     </div>
-    <div id="resume">
-      <p>Resume Component here</p>
-    </div>
+    <Resume/>
   </div>
 </template>
 
 <script>
-import { jobs, education } from '../data/resume';
+import Resume from './Resume/Resume';
 export default {
   name: 'About',
-  data() {
-    return {
-      jobs,
-      education
-    };
+  components: {
+    Resume
   }
 };
 </script>
@@ -29,7 +27,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container {
-  width: 70%;
+  width: 80%;
   margin: auto;
   margin-top: 15px;
 }
