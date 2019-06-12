@@ -60,7 +60,7 @@ export const projects = [
     description:
       'React-Native iOS app designed to find which services are streaming your favorite movies and TV shows',
     link: 'https://github.com/danglebert/Visible',
-    image: ''
+    image: 'https://media.giphy.com/media/dWyCXCLIOxYwV4bC01/giphy.gif'
   },
   {
     id: 7,
@@ -68,7 +68,7 @@ export const projects = [
     description:
       'Live-streaming platform for musical performance and interaction',
     link: 'https://github.com/Fullstack-JamSpace/JamSpaceTV',
-    image: ''
+    image: 'https://media.giphy.com/media/ZXx2y32RFiyK9i6tNz/giphy.gif'
   },
   {
     id: 8,

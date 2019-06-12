@@ -2,6 +2,7 @@
   <div id="app">
     <Heading/>
     <About/>
+    <Projects/>
   </div>
 </template>
 
@@ -9,12 +10,14 @@
 // @ is an alias to /src
 import Heading from '@/components/Heading.vue';
 import About from '@/components/About.vue';
+import Projects from '@/components/Projects/Projects.vue';
 
 export default {
   name: 'app',
   components: {
     Heading,
-    About
+    About,
+    Projects
   }
 };
 </script>
