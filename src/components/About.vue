@@ -29,7 +29,7 @@ export default {
 .container {
   width: 80%;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 h1 {
   margin: 0;
@@ -54,6 +54,7 @@ img {
   height: 300px;
   width: 300px;
   border-radius: 200px;
-  box-shadow: 0 0 8px black;
+  border: 1px solid #3a5168;
+  box-shadow: 1px 1px 5px #3a5168;
 }
 </style>

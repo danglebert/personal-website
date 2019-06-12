@@ -65,6 +65,7 @@ h1 {
   text-shadow: 1px 1.5px #b63f29;
   animation-name: introName;
   animation-duration: 1.1s;
+  position: relative;
 }
 h3 {
   margin: 0;
@@ -72,6 +73,7 @@ h3 {
   text-shadow: 1px 1px white;
   animation-name: introDesc;
   animation-duration: 3s;
+  position: relative;
 }
 
 .heading {
