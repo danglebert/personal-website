@@ -4,7 +4,7 @@
       <h1 v-if="show">Dan Gilbert</h1>
     </transition>
     <transition v-on:enter="descEnter" v-on:before-enter="beforeEnter">
-      <h3 v-if="show">Full Stack Software Engineer</h3>
+      <h3 style="color:#3A5168" v-if="show">Full Stack Software Engineer</h3>
     </transition>
   </div>
 </template>
@@ -40,11 +40,10 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 @keyframes introName {
   0% {
-    top: -100px;
+    top: -500px;
   }
   100% {
     top: 0px;
@@ -63,10 +62,9 @@ h1 {
   margin: 0;
   color: white;
   font-size: 4em;
-  text-shadow: 1px 1.5px #ff0000;
+  text-shadow: 1px 1.5px #b63f29;
   animation-name: introName;
-  animation-duration: 3s;
-  position: relative;
+  animation-duration: 1.1s;
 }
 h3 {
   margin: 0;
@@ -74,7 +72,6 @@ h3 {
   text-shadow: 1px 1px white;
   animation-name: introDesc;
   animation-duration: 3s;
-  position: relative;
 }
 
 .heading {
