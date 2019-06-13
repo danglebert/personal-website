@@ -40,6 +40,7 @@ export default {
 .time {
   font-size: 18px;
   margin-top: 0;
+  color: #b63f29;
 }
 .details {
   display: flex;

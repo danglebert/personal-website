@@ -2,7 +2,7 @@
   <div class="projects-pg">
     <h1>Projects</h1>
     <div class="projects-container">
-      <div v-bind:key="project.id" v-for="project in projects">
+      <div class="single-proj-cont" v-bind:key="project.id" v-for="project in projects">
         <SingleProject v-bind:project="project"/>
       </div>
     </div>
@@ -26,10 +26,22 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  width: 300px;
+h1 {
+  margin: 0;
+  color: white;
+  font-size: 4em;
+  text-shadow: 2px 2px 7px black;
 }
-.image {
-  height: 300px;
+.projects-pg {
+  width: 100%;
+  background-color: #f1f3f6;
+}
+.projects-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.single-proj-cont {
+  padding: 10px;
 }
 </style>

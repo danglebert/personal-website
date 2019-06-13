@@ -1,21 +1,15 @@
 <template>
-  <v-layout>
-    <v-flex xs12 sm6 offset-sm3>
-      <v-card class="card">
-        <v-img class="image" v-bind:src="project.image" aspect-ratio="2.75"></v-img>
-
-        <v-card-title primary-title>
-          <div>
-            <h3 class="headline mb-0">{{project.name}}</h3>
-            <div>{{project.description}}</div>
-          </div>
-        </v-card-title>
-
-        <v-card-actions>
-          <v-btn flat color="orange">Share</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
+  <v-layout class="full-card">
+    <v-card class="card-content" :hover="true">
+      <v-img class="image" v-bind:src="project.image" :contain="true" aspect-ratio="fixed"></v-img>
+      <v-divider class="divider"/>
+      <v-card-title primary-title>
+        <div class="text-content">
+          <h3 class="headline mb-0">{{project.name}}</h3>
+          <div>{{project.description}}</div>
+        </div>
+      </v-card-title>
+    </v-card>
   </v-layout>
 </template>
 
@@ -27,10 +21,30 @@ export default {
 </script>
 
 <style scoped>
-.card {
-  width: 300px;
+.full-card {
+  width: 500px;
+  border-radius: 10px;
+  border: 0.5px solid #999;
+  box-shadow: 0.5px 0.5px 10px #999;
+}
+
+.card-content {
+  border-radius: 10px;
+  width: 100%;
 }
 .image {
-  height: 300px;
+  height: 350px;
+  width: 100%;
+  border: 10px solid white;
+}
+.divider {
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.15);
+}
+.text-content {
+  width: 100%;
+  text-align: center;
+  color: #3a5168;
 }
 </style>
