@@ -65,7 +65,6 @@ h1 {
   text-shadow: 1px 1.5px #b63f29;
   animation-name: introName;
   animation-duration: 1.1s;
-  position: relative;
 }
 h3 {
   margin: 0;
@@ -73,7 +72,6 @@ h3 {
   text-shadow: 1px 1px white;
   animation-name: introDesc;
   animation-duration: 3s;
-  position: relative;
 }
 
 .heading {
@@ -82,11 +80,9 @@ h3 {
   background-size: 100% 100%;
   background-attachment: fixed;
   height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  box-shadow: 1px 1px 10px;
 }
 </style>
