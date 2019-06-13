@@ -60,29 +60,30 @@ export const projects = [
     description:
       'React-Native iOS app designed to find which services are streaming your favorite movies and TV shows',
     link: 'https://github.com/danglebert/Visible',
-    image: ''
+    image: 'https://media.giphy.com/media/dWyCXCLIOxYwV4bC01/giphy.gif'
   },
   {
     id: 7,
     name: 'JamSpace',
     description:
-      'Live-streaming platform for musical performance and interaction',
+      'Live-streaming platform for musical performance and interaction. Built with React, Firebase, WebRTC/PeerJS.',
     link: 'https://github.com/Fullstack-JamSpace/JamSpaceTV',
-    image: ''
+    image: 'https://media.giphy.com/media/ZXx2y32RFiyK9i6tNz/giphy.gif'
   },
   {
     id: 8,
     name: 'Sockr',
-    description: 'E-Commerce website for selling only odd numbers of socks',
+    description:
+      'E-Commerce website for selling only odd numbers of socks. Built on top of React, Redux, PostgreSQL.',
     link: 'https://github.com/Fullstack-GraceShopper/GraceShopper',
-    image: ''
+    image: 'https://media.giphy.com/media/U76qzMRHk2Bdo9SRaR/giphy.gif'
   },
   {
     id: 9,
     name: 'Cheat for Fortune',
     description:
-      'Word guessing app that fills in the letters that you do not know',
+      'Word guessing app that fills in the letters that you do not know. Built with React.',
     link: 'https://github.com/danglebert/CheatForFortune',
-    image: ''
+    image: 'https://media.giphy.com/media/Yn4kxLuUN3rJZsku8U/giphy.gif'
   }
 ];

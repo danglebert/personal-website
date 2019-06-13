@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="about-container">
     <h1>About Me / Resume</h1>
     <div id="img-and-desc">
       <img src="../assets/headshot.jpg">
@@ -26,16 +26,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.container {
-  width: 80%;
+.about-container {
   margin: auto;
-  margin-top: 20px;
+  padding: 15px 10% 0 10%;
+  background-color: #dfe4eb;
+  border-top: 1px solid #999;
+  box-shadow: 2px 2px 10px black;
 }
 h1 {
   margin: 0;
   color: white;
   font-size: 4em;
   text-shadow: 2px 2px 7px black;
+  padding: 20px 0 30px 0;
 }
 #img-and-desc {
   display: flex;

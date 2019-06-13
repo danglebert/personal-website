@@ -7,7 +7,7 @@
     <div class="details">
       <h3>{{school.title}}</h3>
       <p class="desc">{{school.description}}</p>
-      <p style="color:#b63f29">{{school.location}}</p>
+      <p class="location">{{school.location}}</p>
     </div>
   </div>
 </template>
@@ -23,6 +23,7 @@ export default {
 .single-school {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 10px;
 }
 .name-time {
   display: flex;
@@ -39,6 +40,7 @@ export default {
 .time {
   font-size: 18px;
   margin-top: 0;
+  color: #b63f29;
 }
 .details {
   display: flex;
@@ -50,5 +52,11 @@ export default {
 .desc {
   text-align: start;
   margin: 0;
+}
+
+.location {
+  color: #b63f29;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 </style>

@@ -38,6 +38,7 @@ export default {
 }
 .heading-text {
   color: #3a5168;
+  padding: 20px 0 20px 0;
 }
 .job-container {
   padding-bottom: 10px;

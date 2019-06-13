@@ -26,6 +26,7 @@ export default {
 .single-job {
   display: flex;
   justify-content: space-evenly;
+  padding-top: 10px;
 }
 .name-time {
   display: flex;
@@ -42,6 +43,7 @@ export default {
 .time {
   font-size: 18px;
   margin-top: 0;
+  color: #b63f29;
 }
 .details {
   display: flex;
@@ -59,8 +61,9 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
   color: #b63f29;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .link {
