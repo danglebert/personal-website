@@ -28,7 +28,7 @@ export default {
     descEnter(el, done) {
       setTimeout(() => {
         Velocity(el, { opacity: 1 }, { duration: 1500 });
-      }, 1500);
+      }, 3500);
       done();
     }
   },
@@ -49,14 +49,6 @@ export default {
     top: 0px;
   }
 }
-@keyframes introDesc {
-  0% {
-    top: 200px;
-  }
-  100% {
-    top: 0px;
-  }
-}
 
 h1 {
   margin: 0;
@@ -64,14 +56,13 @@ h1 {
   font-size: 4em;
   text-shadow: 1px 1.5px #b63f29;
   animation-name: introName;
-  animation-duration: 1.1s;
+  animation-duration: 3s;
+  position: relative;
 }
 h3 {
   margin: 0;
   font-size: 2em;
   text-shadow: 1px 1px white;
-  animation-name: introDesc;
-  animation-duration: 3s;
 }
 
 .heading {
