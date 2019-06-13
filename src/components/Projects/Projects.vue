@@ -31,10 +31,14 @@ h1 {
   color: white;
   font-size: 4em;
   text-shadow: 2px 2px 7px black;
+  padding: 20px 0 30px 0;
 }
 .projects-pg {
   width: 100%;
   background-color: #f1f3f6;
+  padding: 15px 5% 0 5%;
+  border-top: 1px solid #999;
+  box-shadow: 3px 3px 10px #3b3b3b;
 }
 .projects-container {
   display: flex;
@@ -42,6 +46,6 @@ h1 {
   flex-wrap: wrap;
 }
 .single-proj-cont {
-  padding: 10px;
+  padding: 10px 10px 50px 10px;
 }
 </style>

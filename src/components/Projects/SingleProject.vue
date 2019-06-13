@@ -1,15 +1,17 @@
 <template>
   <v-layout class="full-card">
-    <v-card class="card-content" :hover="true">
-      <v-img class="image" v-bind:src="project.image" :contain="true" aspect-ratio="fixed"></v-img>
-      <v-divider class="divider"/>
-      <v-card-title primary-title>
-        <div class="text-content">
-          <h3 class="headline mb-0">{{project.name}}</h3>
-          <div>{{project.description}}</div>
-        </div>
-      </v-card-title>
-    </v-card>
+    <a target="_blank" class="card-link" :href="project.link">
+      <v-card class="card-content" :hover="true">
+        <v-img class="image" v-bind:src="project.image" :contain="true" aspect-ratio="fixed"></v-img>
+        <v-divider class="divider"/>
+        <v-card-title primary-title>
+          <div class="text-content">
+            <h3 class="headline mb-0">{{project.name}}</h3>
+            <div>{{project.description}}</div>
+          </div>
+        </v-card-title>
+      </v-card>
+    </a>
   </v-layout>
 </template>
 
@@ -27,7 +29,10 @@ export default {
   border: 0.5px solid #999;
   box-shadow: 0.5px 0.5px 10px #999;
 }
-
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
 .card-content {
   border-radius: 10px;
   width: 100%;
