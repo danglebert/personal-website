@@ -52,9 +52,7 @@ a {
   font-size: 1.3em;
   margin: 5px 0 0 0;
 }
-a:hover {
-  color: #ef915c;
-}
+a:hover,
 a:hover .net-icon {
   color: #ef915c;
 }
@@ -62,8 +60,6 @@ a:hover .net-icon {
 .contact-container {
   background-image: linear-gradient(to right, #2d616e, #3a5168);
   height: 500px;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   color: white;
   padding: 30px 0 0 0;
 }
@@ -85,7 +81,6 @@ a:hover .net-icon {
   display: flex;
   align-items: center;
 }
-
 .net-icon {
   color: #ef775c;
 }

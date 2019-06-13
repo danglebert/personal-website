@@ -27,14 +27,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .about-container {
-  margin: auto;
   padding: 15px 10% 0 10%;
   background-color: #dfe4eb;
   border-top: 1px solid #999;
   box-shadow: 2px 2px 10px black;
 }
 h1 {
-  margin: 0;
   color: white;
   font-size: 4em;
   text-shadow: 2px 2px 7px black;
