@@ -3,6 +3,7 @@
     <Heading/>
     <About/>
     <Projects/>
+    <Contact/>
   </div>
 </template>
 
@@ -11,13 +12,15 @@
 import Heading from '@/components/Heading.vue';
 import About from '@/components/About.vue';
 import Projects from '@/components/Projects/Projects.vue';
+import Contact from '@/components/Contact.vue';
 
 export default {
   name: 'app',
   components: {
     Heading,
     About,
-    Projects
+    Projects,
+    Contact
   }
 };
 </script>
