@@ -33,9 +33,8 @@ export default {
   box-shadow: 2px 2px 10px black;
 }
 h1 {
-  color: white;
   font-size: 4em;
-  text-shadow: 2px 2px 7px black;
+  text-shadow: 1px 1.5px white;
   padding: 20px 0 30px 0;
 }
 #img-and-desc {

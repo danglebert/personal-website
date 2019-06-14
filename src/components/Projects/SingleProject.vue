@@ -1,6 +1,6 @@
 <template>
   <v-layout class="full-card">
-    <a target="_blank" class="card-link" :href="project.link">
+    <a target="_blank" :href="project.link">
       <v-card class="card-content" :hover="true">
         <v-img class="image" v-bind:src="project.image" :contain="true" aspect-ratio="fixed"></v-img>
         <v-divider class="divider"/>
@@ -28,10 +28,6 @@ export default {
   border-radius: 10px;
   border: 0.5px solid #999;
   box-shadow: 0.5px 0.5px 10px #999;
-}
-.card-link {
-  text-decoration: none;
-  color: inherit;
 }
 .card-content {
   border-radius: 10px;

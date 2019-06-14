@@ -1,6 +1,13 @@
 <template>
   <div class="projects-pg">
     <h1>Projects</h1>
+    <p>
+      Liking this website? Check out the source code
+      <a
+        target="_blank"
+        href="https://github.com/danglebert/personal-website"
+      >here</a>.
+    </p>
     <div class="projects-container">
       <div class="single-proj-cont" v-bind:key="project.id" v-for="project in projects">
         <SingleProject v-bind:project="project"/>
@@ -28,11 +35,21 @@ export default {
 <style scoped>
 h1 {
   margin: 0;
-  color: white;
   font-size: 4em;
-  text-shadow: 2px 2px 7px black;
-  padding: 20px 0 30px 0;
+  text-shadow: 1px 1.5px white;
+  padding: 20px 0 10px 0;
 }
+p {
+  font-size: 1.1em;
+  padding-bottom: 10px;
+}
+a {
+  color: #b63f29;
+}
+a:hover {
+  color: #ef775c;
+}
+
 .projects-pg {
   width: 100%;
   background-color: #f1f3f6;
