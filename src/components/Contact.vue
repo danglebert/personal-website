@@ -4,7 +4,7 @@
     <div class="contact-content">
       <div class="email-container">
         <h3>Drop a Line</h3>
-        <p>Have an idea that you would like me to work on? Just want to have a conversation? Shoot me an email at this address and I will get back shortly!</p>
+        <p>Have an idea that you would like help with? Just want to have a conversation? Shoot me an email at this address and I will get back shortly!</p>
         <a href="mailto:daniel.gilbert0051@gmail.com?Subject=Hello%20There" target="_top">
           <p>Daniel.gilbert0051@gmail.com</p>
         </a>
