@@ -67,7 +67,6 @@ export default {
 }
 
 .link {
-  text-decoration: none;
   color: #b63f29;
 }
 </style>

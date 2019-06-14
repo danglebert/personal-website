@@ -47,7 +47,6 @@ p {
   font-size: 1.5em;
 }
 a {
-  text-decoration: none;
   color: #ef775c;
   font-size: 1.3em;
   margin: 5px 0 0 0;

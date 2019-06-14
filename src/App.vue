@@ -33,6 +33,10 @@ body {
   height: 100%;
   margin: 0;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
