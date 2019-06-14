@@ -1,5 +1,5 @@
 <template>
-  <div class="about-container">
+  <div id="about">
     <h1>About Me / Resume</h1>
     <div id="img-and-desc">
       <img src="../assets/headshot.jpg">
@@ -24,9 +24,8 @@ export default {
 };
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.about-container {
+#about {
   padding: 15px 10% 0 10%;
   background-color: #dfe4eb;
   border-top: 1px solid #999;

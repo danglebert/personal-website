@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-container">
+  <div id="contact">
     <h1>Contact</h1>
     <div class="contact-content">
       <div class="email-container">
@@ -56,7 +56,7 @@ a:hover .net-icon {
   color: #ef915c;
 }
 
-.contact-container {
+#contact {
   background-image: linear-gradient(to right, #2d616e, #3a5168);
   height: 500px;
   color: white;

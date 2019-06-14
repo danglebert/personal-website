@@ -1,5 +1,5 @@
 <template>
-  <div class="projects-pg">
+  <div id="projects">
     <h1>Projects</h1>
     <p>
       Liking this website? Check out the source code
@@ -50,7 +50,7 @@ a:hover {
   color: #ef775c;
 }
 
-.projects-pg {
+#projects {
   width: 100%;
   background-color: #f1f3f6;
   padding: 15px 5% 0 5%;
