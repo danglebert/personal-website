@@ -1,10 +1,10 @@
 <template>
-  <div class="heading">
-    <transition name="fade" v-on:enter="nameEnter" v-on:before-enter="beforeEnter">
-      <h1 v-if="show">Dan Gilbert</h1>
+  <div id="heading" v-on:scroll="handleScroll">
+    <transition name="fade" v-on:enter="enter" v-on:before-enter="beforeEnter">
+      <h1 id="name" v-if="show">Dan Gilbert</h1>
     </transition>
-    <transition v-on:enter="descEnter" v-on:before-enter="beforeEnter">
-      <h3 style="color:#3A5168" v-if="show">Full Stack Software Engineer</h3>
+    <transition v-on:enter="enter" v-on:before-enter="beforeEnter">
+      <h3 id="title" style="color:#3A5168" v-if="show">Full Stack Software Engineer</h3>
     </transition>
   </div>
 </template>
@@ -14,66 +14,81 @@ export default {
   name: 'HelloWorld',
   data() {
     return {
-      show: false
+      show: false,
+      removed: false
     };
   },
   methods: {
     beforeEnter: function(el) {
       el.style.opacity = 0;
+      if (el.id === 'name') el.style.bottom = '55%';
+      else el.style.top = '55%';
     },
-    nameEnter(el, done) {
-      Velocity(el, { opacity: 1 }, { duration: 1500 });
+    enter(el, done) {
+      if (el.id === 'name')
+        Velocity(el, { opacity: 1, bottom: '50%' }, { duration: 750 });
+      else Velocity(el, { opacity: 1, top: '50%' }, { duration: 750 });
       done();
     },
-    descEnter(el, done) {
-      setTimeout(() => {
-        Velocity(el, { opacity: 1 }, { duration: 1500 });
-      }, 3500);
-      done();
+    handleScroll() {
+      const parallax = document.getElementById('heading');
+      const offset = window.pageYOffset;
+      parallax.style.backgroundPositionY = offset * 0.7 + 'px';
+
+      const removed = this.removed;
+      if (!this.removed && offset > 1000) {
+        const name = document.getElementById('name');
+        const title = document.getElementById('title');
+        name.hidden = true;
+        title.hidden = true;
+        this.removed = true;
+      }
+
+      if (this.removed && offset < 1000) {
+        const name = document.getElementById('name');
+        const title = document.getElementById('title');
+        name.hidden = false;
+        title.hidden = false;
+        this.removed = false;
+      }
     }
   },
   created() {
+    window.addEventListener('scroll', this.handleScroll);
     setTimeout(() => {
       this.show = true;
     }, 500);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 };
 </script>
 
 <style scoped>
-@keyframes introName {
-  0% {
-    top: -500px;
-  }
-  100% {
-    top: 0px;
-  }
-}
-
-h1 {
-  margin: 0;
-  color: white;
-  font-size: 4em;
-  text-shadow: 1px 1.5px #b63f29;
-  animation-name: introName;
-  animation-duration: 3s;
-  position: relative;
-}
-h3 {
-  margin: 0;
-  font-size: 2em;
-  text-shadow: 1px 1px white;
-}
-
-.heading {
+#heading {
   background-image: url('../assets/background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-attachment: fixed;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: -1;
+}
+#name {
+  margin: 0;
+  color: white;
+  font-size: 5em;
+  text-shadow: 1px 1.5px #b63f29;
+  position: fixed;
+}
+#title {
+  margin: 0;
+  font-size: 2.5em;
+  text-shadow: 1px 1px white;
+  position: fixed;
 }
 </style>

@@ -61,6 +61,8 @@ a:hover .net-icon {
   height: 500px;
   color: white;
   padding: 30px 0 0 0;
+  border-top: 1px solid #999;
+  box-shadow: 2px 2px 10px black;
 }
 .contact-content {
   display: flex;
