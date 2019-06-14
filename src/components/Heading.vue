@@ -1,6 +1,6 @@
 <template>
-  <div id="heading" v-on:scroll="handleScroll">
-    <transition name="fade" v-on:enter="enter" v-on:before-enter="beforeEnter">
+  <div id="home" v-on:scroll="handleScroll">
+    <transition v-on:enter="enter" v-on:before-enter="beforeEnter">
       <h1 id="name" v-if="show">Dan Gilbert</h1>
     </transition>
     <transition v-on:enter="enter" v-on:before-enter="beforeEnter">
@@ -15,11 +15,11 @@ export default {
   data() {
     return {
       show: false,
-      removed: false
+      hidden: false
     };
   },
   methods: {
-    beforeEnter: function(el) {
+    beforeEnter(el) {
       el.style.opacity = 0;
       if (el.id === 'name') el.style.bottom = '55%';
       else el.style.top = '55%';
@@ -31,25 +31,25 @@ export default {
       done();
     },
     handleScroll() {
-      const parallax = document.getElementById('heading');
+      const parallax = document.getElementById('home');
       const offset = window.pageYOffset;
       parallax.style.backgroundPositionY = offset * 0.7 + 'px';
 
-      const removed = this.removed;
-      if (!this.removed && offset > 1000) {
+      const hidden = this.hidden;
+      if (!this.hidden && offset > 1000) {
         const name = document.getElementById('name');
         const title = document.getElementById('title');
         name.hidden = true;
         title.hidden = true;
-        this.removed = true;
+        this.hidden = true;
       }
 
-      if (this.removed && offset < 1000) {
+      if (this.hidden && offset < 1000) {
         const name = document.getElementById('name');
         const title = document.getElementById('title');
         name.hidden = false;
         title.hidden = false;
-        this.removed = false;
+        this.hidden = false;
       }
     }
   },
@@ -66,7 +66,7 @@ export default {
 </script>
 
 <style scoped>
-#heading {
+#home {
   background-image: url('../assets/background.jpg');
   background-repeat: no-repeat;
   background-size: 100% 100%;

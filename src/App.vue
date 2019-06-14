@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Navigator/>
     <Heading/>
     <About/>
     <Projects/>
@@ -13,6 +14,7 @@ import Heading from '@/components/Heading.vue';
 import About from '@/components/About.vue';
 import Projects from '@/components/Projects/Projects.vue';
 import Contact from '@/components/Contact.vue';
+import Navigator from '@/components/Navigator.vue';
 
 export default {
   name: 'app',
@@ -20,7 +22,8 @@ export default {
     Heading,
     About,
     Projects,
-    Contact
+    Contact,
+    Navigator
   }
 };
 </script>
