@@ -20,17 +20,20 @@ export default {
   },
   methods: {
     beforeEnter(el) {
-      if (screen.width > 750) {
-        el.style.opacity = 0;
+      el.style.opacity = 0;
+      if (window.innerWidth > 750) {
         if (el.id === 'name') el.style.bottom = '55%';
         else el.style.top = '55%';
       }
     },
     enter(el, done) {
-      if (screen.width > 750) {
+      if (window.innerWidth > 750) {
         if (el.id === 'name')
           Velocity(el, { opacity: 1, bottom: '50%' }, { duration: 750 });
         else Velocity(el, { opacity: 1, top: '50%' }, { duration: 750 });
+      } else {
+        if (el.id === 'name') Velocity(el, { opacity: 1 }, { duration: 750 });
+        else Velocity(el, { opacity: 1 }, { duration: 750 });
         done();
       }
     },
@@ -87,26 +90,29 @@ export default {
   font-size: 5em;
   text-shadow: 1px 1.5px #b63f29;
   position: fixed;
+  bottom: 50%;
 }
 #title {
   margin: 0;
   font-size: 2.5em;
   text-shadow: 1px 1px white;
   position: fixed;
+  top: 50%;
 }
 
 @media (max-width: 750px) {
   #home {
     z-index: 0;
-    height: 100%;
   }
   #name {
     font-size: 4.5em;
     position: relative;
+    bottom: 0px !important;
   }
   #title {
     width: 83vw;
     position: relative;
+    top: 0px !important;
   }
 }
 </style>
