@@ -9,7 +9,7 @@
       <p class="desc">{{job.description}}</p>
       <div class="loc-link">
         <p>{{job.location}}</p>
-        <a :href="job.link" class="link">{{job.link}}</a>
+        <a :href="job.link" target="_blank" class="link">{{job.link}}</a>
       </div>
     </div>
   </div>
