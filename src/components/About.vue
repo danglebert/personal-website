@@ -56,4 +56,40 @@ img {
   border: 1px solid #3a5168;
   box-shadow: 1px 1px 5px #3a5168;
 }
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    text-align: center;
+  }
+  img {
+    height: 250px;
+    width: 250px;
+    border-radius: 200px;
+    border: 1px solid #3a5168;
+    box-shadow: 1px 1px 5px #3a5168;
+  }
+  .text {
+    font-size: 1.3em;
+    text-align: center;
+  }
+  #about {
+    text-align: start;
+    padding: 15px 7% 0 7%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 3em;
+    padding: 20px 0 10px 0;
+  }
+  #img-and-desc {
+    flex-direction: column;
+  }
+  .text {
+    padding-top: 10px;
+    font-size: 1.3em;
+    width: 100%;
+  }
+}
 </style>

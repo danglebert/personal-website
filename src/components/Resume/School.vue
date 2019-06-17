@@ -59,4 +59,31 @@ export default {
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
+@media only screen and (max-width: 800px) {
+  .name-time {
+    width: 30%;
+  }
+  .details {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .single-school {
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-time {
+    width: 90%;
+    padding-left: 0;
+  }
+  .institution {
+    margin-bottom: 3px;
+  }
+  .details {
+    width: 90%;
+    padding-right: 0;
+  }
+}
 </style>

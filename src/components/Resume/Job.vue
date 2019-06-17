@@ -8,7 +8,7 @@
       <h3>{{job.position}}</h3>
       <p class="desc">{{job.description}}</p>
       <div class="loc-link">
-        <p>{{job.location}}</p>
+        <p class="location">{{job.location}}</p>
         <a :href="job.link" target="_blank" class="link">{{job.link}}</a>
       </div>
     </div>
@@ -68,5 +68,39 @@ export default {
 
 .link {
   color: #b63f29;
+}
+
+@media only screen and (max-width: 800px) {
+  .loc-link {
+    flex-direction: column;
+    padding-top: 5px;
+  }
+  .location {
+    margin: 0;
+  }
+  .name-time {
+    width: 30%;
+  }
+  .details {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .single-job {
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-time {
+    width: 90%;
+    padding-left: 0;
+  }
+  .company {
+    margin-bottom: 3px;
+  }
+  .details {
+    width: 90%;
+    padding-right: 0;
+  }
 }
 </style>
