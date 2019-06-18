@@ -19,23 +19,28 @@ export default {
     };
   },
   methods: {
+    animStart(el) {
+      if (el.id === 'name') el.style.bottom = '55%';
+      else el.style.top = '55%';
+    },
+    animEnd(el, sufWidth) {
+      const nameParams = sufWidth
+        ? { opacity: 1, bottom: '50%' }
+        : { opacity: 1 };
+      const titleParams = sufWidth
+        ? { opacity: 1, top: '50%' }
+        : { opacity: 1 };
+
+      if (el.id === 'name') Velocity(el, nameParams, { duration: 750 });
+      else Velocity(el, titleParams, { duration: 750 });
+    },
     beforeEnter(el) {
       el.style.opacity = 0;
-      if (window.innerWidth > 750) {
-        if (el.id === 'name') el.style.bottom = '55%';
-        else el.style.top = '55%';
-      }
+      if (window.innerWidth > 750) this.animStart(el);
     },
     enter(el, done) {
-      if (window.innerWidth > 750) {
-        if (el.id === 'name')
-          Velocity(el, { opacity: 1, bottom: '50%' }, { duration: 750 });
-        else Velocity(el, { opacity: 1, top: '50%' }, { duration: 750 });
-      } else {
-        if (el.id === 'name') Velocity(el, { opacity: 1 }, { duration: 750 });
-        else Velocity(el, { opacity: 1 }, { duration: 750 });
-        done();
-      }
+      if (window.innerWidth > 750) this.animEnd(el, true);
+      else this.animEnd(el, false);
     },
     handleScroll() {
       const parallax = document.getElementById('home');
