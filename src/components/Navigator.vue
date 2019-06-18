@@ -46,6 +46,7 @@ export default {
   display: flex;
   flex-direction: column;
   border-radius: 10px;
+  z-index: 1;
 }
 
 a {
@@ -69,5 +70,11 @@ a:first-child {
 a:last-child {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .nav-container {
+    display: none;
+  }
 }
 </style>

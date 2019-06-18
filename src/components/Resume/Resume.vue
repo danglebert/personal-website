@@ -44,4 +44,10 @@ export default {
   padding-bottom: 10px;
   border-bottom: 1px solid #3a5168;
 }
+
+@media only screen and (max-width: 800px) {
+  .heading-text {
+    text-align: center;
+  }
+}
 </style>

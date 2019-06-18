@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style scoped>
+h3 {
+  text-align: start;
+}
 .single-school {
   display: flex;
   justify-content: space-evenly;
@@ -58,5 +61,23 @@ export default {
   color: #b63f29;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .single-school {
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-time {
+    width: 90%;
+    padding-left: 0;
+  }
+  .institution {
+    margin-bottom: 3px;
+  }
+  .details {
+    width: 90%;
+    padding-right: 0;
+  }
 }
 </style>

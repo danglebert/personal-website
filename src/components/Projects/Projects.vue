@@ -65,4 +65,10 @@ a:hover {
 .single-proj-cont {
   padding: 10px 10px 50px 10px;
 }
+
+@media (max-width: 750px) {
+  .single-proj-cont {
+    padding: 5px 0px 20px 0px;
+  }
+}
 </style>

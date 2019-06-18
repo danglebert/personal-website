@@ -8,7 +8,7 @@
       <h3>{{job.position}}</h3>
       <p class="desc">{{job.description}}</p>
       <div class="loc-link">
-        <p>{{job.location}}</p>
+        <p class="location">{{job.location}}</p>
         <a :href="job.link" target="_blank" class="link">{{job.link}}</a>
       </div>
     </div>
@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+h3 {
+  text-align: start;
+}
 .single-job {
   display: flex;
   justify-content: space-evenly;
@@ -68,5 +71,31 @@ export default {
 
 .link {
   color: #b63f29;
+}
+
+@media (max-width: 1000px) {
+  .single-job {
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-time {
+    width: 90%;
+    padding-left: 0;
+  }
+  .company {
+    margin-bottom: 3px;
+  }
+  .details {
+    width: 90%;
+    padding-right: 0;
+  }
+  .loc-link {
+    flex-direction: column;
+    padding-top: 5px;
+    text-align: start;
+  }
+  .location {
+    margin: 0;
+  }
 }
 </style>

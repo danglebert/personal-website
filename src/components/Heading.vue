@@ -21,21 +21,27 @@ export default {
   methods: {
     beforeEnter(el) {
       el.style.opacity = 0;
-      if (el.id === 'name') el.style.bottom = '55%';
-      else el.style.top = '55%';
+      if (window.innerWidth > 750) {
+        if (el.id === 'name') el.style.bottom = '55%';
+        else el.style.top = '55%';
+      }
     },
     enter(el, done) {
-      if (el.id === 'name')
-        Velocity(el, { opacity: 1, bottom: '50%' }, { duration: 750 });
-      else Velocity(el, { opacity: 1, top: '50%' }, { duration: 750 });
-      done();
+      if (window.innerWidth > 750) {
+        if (el.id === 'name')
+          Velocity(el, { opacity: 1, bottom: '50%' }, { duration: 750 });
+        else Velocity(el, { opacity: 1, top: '50%' }, { duration: 750 });
+      } else {
+        if (el.id === 'name') Velocity(el, { opacity: 1 }, { duration: 750 });
+        else Velocity(el, { opacity: 1 }, { duration: 750 });
+        done();
+      }
     },
     handleScroll() {
       const parallax = document.getElementById('home');
       const offset = window.pageYOffset;
       parallax.style.backgroundPositionY = offset * 0.7 + 'px';
 
-      const hidden = this.hidden;
       if (!this.hidden && offset > 1000) {
         const name = document.getElementById('name');
         const title = document.getElementById('title');
@@ -69,7 +75,7 @@ export default {
 #home {
   background-image: url('../assets/background.jpg');
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: auto 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -84,11 +90,29 @@ export default {
   font-size: 5em;
   text-shadow: 1px 1.5px #b63f29;
   position: fixed;
+  bottom: 50%;
 }
 #title {
   margin: 0;
   font-size: 2.5em;
   text-shadow: 1px 1px white;
   position: fixed;
+  top: 50%;
+}
+
+@media (max-width: 750px) {
+  #home {
+    z-index: 0;
+  }
+  #name {
+    font-size: 4.5em;
+    position: relative;
+    bottom: 0px !important;
+  }
+  #title {
+    width: 83vw;
+    position: relative;
+    top: 0px !important;
+  }
 }
 </style>
