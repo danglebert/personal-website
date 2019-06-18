@@ -48,4 +48,10 @@ export default {
   text-align: center;
   color: #3a5168;
 }
+
+@media (max-width: 500px) {
+  .full-card {
+    width: 365px;
+  }
+}
 </style>
