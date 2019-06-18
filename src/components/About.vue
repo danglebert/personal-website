@@ -7,7 +7,7 @@
         I am Dan Gilbert, a Software Engineer currently based in New York. I have experience with both front and backend technologies and development practices. My technical strengths include
         <span
           style="color: #b63f29"
-        >JavaScript, Node, Express, React, Redux, React-Native, Vue, SQL, Sequelize</span> and much more. Besides engineering, I love sports, music, fishing, and building custom computers!
+        >JavaScript, Node, Express, React, Redux, React-Native, Vue, SQL, Sequelize</span> and much more. Besides engineering, I love sports, music, fishing, and building custom computers.
       </p>
     </div>
     <Resume/>
