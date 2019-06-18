@@ -103,8 +103,17 @@ a:hover .net-icon {
 }
 
 @media (max-width: 750px) {
+  h1 {
+    padding: 0 0 10px 0;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.2em;
+  }
   #contact {
-    height: 80%;
+    height: 100%;
   }
   .contact-content {
     flex-direction: column;
@@ -112,9 +121,17 @@ a:hover .net-icon {
   }
   .email-container {
     width: 90%;
+    height: 40%;
   }
   .network-container {
     width: 90%;
+    height: 40%;
+  }
+}
+
+@media (max-height: 500px) {
+  #contact {
+    height: 130%;
   }
 }
 </style>

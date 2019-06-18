@@ -120,4 +120,10 @@ export default {
     top: 0px !important;
   }
 }
+
+@media (max-height: 500px) {
+  #home {
+    background-size: 100% 100%;
+  }
+}
 </style>
