@@ -131,7 +131,7 @@ a:hover .net-icon {
 
 @media (max-height: 500px) {
   #contact {
-    height: 130%;
+    height: 150%;
   }
 }
 </style>
