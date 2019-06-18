@@ -51,7 +51,7 @@ export default {
 
 @media (max-width: 530px) {
   .full-card {
-    width: 365px;
+    width: 355px;
   }
 }
 </style>
