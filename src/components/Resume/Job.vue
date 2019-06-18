@@ -23,6 +23,9 @@ export default {
 </script>
 
 <style scoped>
+h3 {
+  text-align: start;
+}
 .single-job {
   display: flex;
   justify-content: space-evenly;
@@ -70,23 +73,7 @@ export default {
   color: #b63f29;
 }
 
-@media only screen and (max-width: 800px) {
-  .loc-link {
-    flex-direction: column;
-    padding-top: 5px;
-  }
-  .location {
-    margin: 0;
-  }
-  .name-time {
-    width: 30%;
-  }
-  .details {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
+@media (max-width: 1000px) {
   .single-job {
     flex-direction: column;
     align-items: center;
@@ -101,6 +88,14 @@ export default {
   .details {
     width: 90%;
     padding-right: 0;
+  }
+  .loc-link {
+    flex-direction: column;
+    padding-top: 5px;
+    text-align: start;
+  }
+  .location {
+    margin: 0;
   }
 }
 </style>

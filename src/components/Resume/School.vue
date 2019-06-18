@@ -20,6 +20,9 @@ export default {
 </script>
 
 <style scoped>
+h3 {
+  text-align: start;
+}
 .single-school {
   display: flex;
   justify-content: space-evenly;
@@ -60,16 +63,7 @@ export default {
   padding-bottom: 5px;
 }
 
-@media only screen and (max-width: 800px) {
-  .name-time {
-    width: 30%;
-  }
-  .details {
-    width: 50%;
-  }
-}
-
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 1000px) {
   .single-school {
     flex-direction: column;
     align-items: center;
