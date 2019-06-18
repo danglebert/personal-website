@@ -63,6 +63,7 @@ a:hover .net-icon {
   padding: 30px 0 0 0;
   border-top: 1px solid #999;
   box-shadow: 2px 2px 10px black;
+  position: relative;
 }
 .contact-content {
   display: flex;
@@ -87,9 +88,33 @@ a:hover .net-icon {
 }
 
 #footer {
-  position: relative;
-  top: 100px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 1px;
   font-size: 1em;
   margin: 0;
+}
+
+@media (max-width: 850px) {
+  a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 750px) {
+  #contact {
+    height: 80%;
+  }
+  .contact-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .email-container {
+    width: 90%;
+  }
+  .network-container {
+    width: 90%;
+  }
 }
 </style>

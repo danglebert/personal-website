@@ -49,7 +49,7 @@ export default {
   color: #3a5168;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 530px) {
   .full-card {
     width: 365px;
   }
