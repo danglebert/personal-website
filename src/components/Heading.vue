@@ -121,6 +121,12 @@ export default {
   }
 }
 
+@media (min-width: 1397px) {
+  #home {
+    background-size: cover;
+  }
+}
+
 @media (max-height: 500px) {
   #home {
     background-size: 100% 100%;
