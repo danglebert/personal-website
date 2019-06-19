@@ -80,7 +80,7 @@ export default {
 #home {
   background-image: url('../assets/background.jpg');
   background-repeat: no-repeat;
-  background-size: auto 100%;
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -118,18 +118,6 @@ export default {
     width: 83vw;
     position: relative;
     top: 0px !important;
-  }
-}
-
-@media (min-width: 1397px) {
-  #home {
-    background-size: cover;
-  }
-}
-
-@media (max-height: 500px) {
-  #home {
-    background-size: 100% 100%;
   }
 }
 </style>
