@@ -12,7 +12,7 @@
     </div>
     <p>
       You can click
-      <a href="../../resume.pdf" download="Daniel-Gilbert-Resume">here</a> to download a PDF of my resume.
+      <a href="../../resume.pdf" download="Daniel-Gilbert-Resume">here</a> to download a copy of my resume.
     </p>
   </div>
 </template>
