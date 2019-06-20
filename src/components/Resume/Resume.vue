@@ -48,6 +48,7 @@ a:hover {
 p {
   margin: 0;
   padding-bottom: 5px;
+  text-align: center;
 }
 
 .res-container {
