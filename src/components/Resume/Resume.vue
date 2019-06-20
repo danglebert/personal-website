@@ -10,6 +10,10 @@
     <div class="school-container" v-bind:key="school.id" v-for="school in education">
       <School v-bind:school="school"/>
     </div>
+    <p>
+      You can click
+      <a href="../../resume.pdf" download="Daniel-Gilbert-Resume">here</a> to download a PDF of my resume.
+    </p>
   </div>
 </template>
 
@@ -33,6 +37,19 @@ export default {
 </script>
 
 <style scoped>
+a {
+  color: #b63f29;
+}
+
+a:hover {
+  color: #ef775c;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
 .res-container {
   width: 100%;
 }
