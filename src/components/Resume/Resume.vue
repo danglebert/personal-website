@@ -3,17 +3,13 @@
     <h1 class="heading-text">Work Experience</h1>
     <div class="job-container">
       <div v-bind:key="job.id" v-for="job in jobs">
-        <Job v-bind:job="job"/>
+        <Job v-bind:job="job" />
       </div>
     </div>
     <h1 class="heading-text">Education</h1>
     <div class="school-container" v-bind:key="school.id" v-for="school in education">
-      <School v-bind:school="school"/>
+      <School v-bind:school="school" />
     </div>
-    <p>
-      You can click
-      <a href="../../resume.pdf" download="Daniel-Gilbert-Resume">here</a> to download a copy of my resume.
-    </p>
   </div>
 </template>
 
