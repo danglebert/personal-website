@@ -1,6 +1,16 @@
 export const jobs = [
   {
     id: 1,
+    company: 'Wayfair',
+    position: 'Software Engineer I - II',
+    time: 'Jan 2020 -',
+    description:
+      "My team is Attract and Nurture within Wayfair's B2B squad, where our goal is to bring prospective businesses into into the Wayfair Professional Program. Lots of work I have done is to make the application as frictionless as possible, while also creating several creative on-site placements to get prospective businesses into our application. My favorite accomplishment so far has been leading, planning and developing a successful launch of the Wayfair Professional business application into the UK!",
+    location: 'Boston, MA',
+    link: 'http://www.wayfairpro.com/'
+  },
+  {
+    id: 2,
     company: 'Fullstack Academy of Code',
     position: 'Teaching Fellow',
     time: 'Oct 2018 - Feb 2019',
@@ -10,7 +20,7 @@ export const jobs = [
     link: 'https://www.fullstackacademy.com/'
   },
   {
-    id: 2,
+    id: 3,
     company: 'The Blue Book Building and Construction Network',
     position: 'Business Intelligence / Financial Analyst',
     time: 'Oct 2016 - Feb 2018',
@@ -20,7 +30,7 @@ export const jobs = [
     link: 'http://www.thebluebook.com/'
   },
   {
-    id: 3,
+    id: 4,
     company: 'The Blue Book Building and Construction Network',
     position: 'Independent Contractor - Lead Generation',
     time: 'Aug 2013 - Oct 2016',
